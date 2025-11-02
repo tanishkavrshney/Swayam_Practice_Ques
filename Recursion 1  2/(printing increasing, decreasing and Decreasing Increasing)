@@ -1,0 +1,11 @@
+class Solution {
+    static void printTillN(int N) {
+        // code here
+        f(1,N);
+    }
+    static void f(int n,int N){
+        if(n>N) return;
+        System.out.print(n+" ");
+        f(n+1,N);
+    }
+}
