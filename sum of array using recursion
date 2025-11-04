@@ -1,0 +1,13 @@
+// User function Template for Java
+
+class Solution {
+    int arraySum(int arr[]) {
+        // code here
+        return f(0,arr,0);
+    }
+    public int f(int i,int[] arr,int sum){
+        if(i==arr.length) return sum;
+        
+        return f(i+1,arr,sum+arr[i]);
+    }
+}
